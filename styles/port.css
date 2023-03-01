@@ -74,6 +74,7 @@ background: #FFF8F3;
 border-radius: 10px;
 padding: 130px 156px;
 text-align: center;
+
 }
 .sec-title{
     font-weight: 700;
@@ -116,14 +117,14 @@ text-align: center;
 font-size: 18px;
 text-align: center;
 color: #757575;
-margin: 0 246px;
+
 margin-bottom: 53px;
 }
 /* skill */
 .skill-container{
     display: flex;
     margin: 108px 45px 33px 30px;
-    gap: 24px;
+   
 }
 
 .skill-title{
@@ -133,6 +134,7 @@ margin-bottom: 53px;
 .skill-description{
     background: #f5f0f0;
     font-size: 16px;
+
 }
 /* resume style */
 .resume-title{
@@ -199,4 +201,60 @@ input{
 .contact a{
     text-decoration: none;
  
+}
+.contact input[type="text"],input[type="email"],textarea{
+    padding: 0 0 0 0 5px;
+}
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav,.front-l,.banner,.skill-container,.resume-content ,.info{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .about,.contact,.front-l{
+        padding: 40px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact input[type="text"],input[type="email"],textarea{
+        padding: 0 0 0 0 5px;
+    }
+    nav{
+        flex-direction: column;
+        margin:0 0 0 0 ;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+}
+@media screen and (min-width:577px) and (max-width:922px) {
+    .about,.contact{
+        padding: 40px;
+    }
+    .contact,.banner{
+        flex-direction: column;
+    }
+    .contact input[type="text"],input[type="email"],textarea{
+        padding: 0 0 0 0 5px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.hide{
+    display: none;
 }
